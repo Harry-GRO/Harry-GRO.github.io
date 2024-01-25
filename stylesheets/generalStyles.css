@@ -5,3 +5,19 @@ body {
     padding: 0;
     background-color: black;
 }
+
+.navbar {
+    background-color: green;
+    display: flex;
+    width: 100vw;
+    height: 12vh;
+    text-align: center;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+}
