@@ -19,21 +19,21 @@ body {
 
 .navbar {
     background-color: var(--palette-colour-4);
-    box-shadow: 0 2px 2px var(--palette-colour-4);
     position: fixed;
     top: 0;
     display: flex;
     width: 100%;
     height: 80px;
+    z-index: 1000;
 }
 
 .navbar ul {
     list-style: none;
     display: flex;
-    width: 50%;
+    width: 30%;
     min-width: 300px;
     height: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin: 0;
     padding: 0;
@@ -58,6 +58,7 @@ body {
 
 .currentPageNavbarItem {
     text-decoration: underline white !important;
+    font-size: 1.1rem;
 }
 
 .navbar ul li a:hover {
@@ -66,4 +67,27 @@ body {
     text-decoration: underline white;
     color: var(--palette-colour-5);
     background-color: var(--palette-colour-3);
+}
+
+.grid {
+    display: grid;
+    height: 600px;
+    margin: 120px 5% 0 5%;
+    gap: 20px;
+    width: 90%;
+    grid-template-columns: repeat(auto-fit ,minmax(300px, 1fr));
+    grid-auto-rows: 100px;
+}
+
+.gridItem {
+    color: var(--palette-colour-5);
+    border-radius: 5px;
+    background-color: var(--palette-colour-2);
+    transition: all 0.3s;
+}
+
+.gridItem:hover {
+    background-color: var(--palette-colour-1);
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
