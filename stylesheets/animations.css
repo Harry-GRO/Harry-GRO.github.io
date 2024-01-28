@@ -58,3 +58,22 @@
     animation-name: slideInBottom;
     animation-timing-function: ease-in-out;
 }
+
+/* swup page load transitions */
+
+.transition-fade-left {
+    opacity: 1;
+    transition: 0.4s;
+}
+
+html.is-rendering .transition-fade-left {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+html.is-leaving .transition-fade-left {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+/* swup end */

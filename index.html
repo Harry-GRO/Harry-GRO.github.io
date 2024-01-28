@@ -4,30 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
-  <link rel="icon" href="./images/logo.png">
-  <link rel="stylesheet" href="./stylesheets/animations.css">
-  <link rel="stylesheet" href="./stylesheets/styles.css">
+  <link rel="icon" href="/images/logo.png">
+  <link rel="stylesheet" href="/stylesheets/animations.css">
+  <link rel="stylesheet" href="/stylesheets/styles.css">
+  <script defer src="https://unpkg.com/swup@4"></script>
+  <script defer src="/scripts/script.js"></script>
 </head>
 <body>  
   <div class="navbar">
     <ul>
-      <li class="slideInTop animate animate--fast"><a class="currentPageNavbarItem" href="./index.html">Home</a></li>
-      <li class="slideInTop animate animate--medium"><a href="./projects.html">Projects</a></li> 
-      <li class="slideInTop animate animate--slow"><a href="./contact.html">Contact Me</a></li>
+      <li class="slideInTop animate animate--fast"><a class="currentPageNavbarItem" href="/index.html">Home</a></li>
+      <li class="slideInTop animate animate--medium"><a href="/projects.html">Projects</a></li> 
+      <li class="slideInTop animate animate--slow"><a href="/contact.html">Contact Me</a></li>
     </ul>
   </div>
-  <main>
+  <main id="swup" class="transition-fade-left">
     <div class="container">
       <h1>Harry Groves</h1>
-    </div>
-
-    <div class="grid">
-      <div class="gridItem slideInBottom animate--before animate--fast"></div>
-      <div class="gridItem slideInBottom animate--before animate--medium"></div>
-      <div class="gridItem slideInBottom animate--before animate--slow"></div>
-      <div class="gridItem slideInBottom animate--before animate--fast animate--delay--half"></div>
-      <div class="gridItem slideInBottom animate--before animate--medium animate--delay--half"></div>
-      <div class="gridItem slideInBottom animate--before animate--slow animate--delay--half"></div>
     </div>
   </main>
 </body>
